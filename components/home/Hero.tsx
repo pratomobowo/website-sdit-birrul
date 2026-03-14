@@ -21,7 +21,7 @@ export default function Hero() {
              x: { duration: 1 },
              y: { duration: 4, repeat: Infinity, ease: "easeInOut" } 
            }}
-           className="absolute bottom-[38%] -left-[40%] sm:bottom-0 sm:-left-8 lg:-left-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10"
+           className="absolute bottom-[38%] left-0 -translate-x-1/2 sm:bottom-0 sm:left-auto sm:translate-x-0 sm:-left-8 lg:-left-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10"
         >
           <Image 
             src="/2.png" 
@@ -42,7 +42,7 @@ export default function Hero() {
              x: { duration: 1 },
              y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 } 
            }}
-           className="absolute bottom-[38%] -right-[40%] sm:bottom-0 sm:-right-8 lg:-right-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10"
+           className="absolute bottom-[38%] right-0 translate-x-1/2 sm:bottom-0 sm:right-auto sm:translate-x-0 sm:-right-8 lg:-right-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10"
         >
           <Image 
             src="/1.png" 
