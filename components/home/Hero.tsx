@@ -9,7 +9,7 @@ import profileData from "@/data/profile.json";
 
 export default function Hero() {
   return (
-    <section className="relative w-full flex flex-col items-center justify-center bg-emerald-50/50 pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+    <section className="relative w-full flex flex-col items-center justify-center bg-emerald-50/50 pt-24 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
       {/* Character Images & Playful Background Elements */}
       <div className="absolute top-0 left-0 right-0 bottom-0 pointer-events-none overflow-hidden z-0">
         {/* Left Character (2.png) - Enlarged and positioned with 15% overflow */}
@@ -21,7 +21,7 @@ export default function Hero() {
              x: { duration: 1 },
              y: { duration: 4, repeat: Infinity, ease: "easeInOut" } 
            }}
-           className="absolute bottom-4 -left-8 lg:-left-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10 hidden sm:block"
+           className="absolute bottom-0 -left-6 sm:-left-8 lg:-left-16 w-[140px] sm:w-[300px] lg:w-[450px] z-10"
         >
           <Image 
             src="/2.png" 
@@ -42,7 +42,7 @@ export default function Hero() {
              x: { duration: 1 },
              y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 } 
            }}
-           className="absolute bottom-4 -right-8 lg:-right-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10 hidden sm:block"
+           className="absolute bottom-0 -right-6 sm:-right-8 lg:-right-16 w-[140px] sm:w-[300px] lg:w-[450px] z-10"
         >
           <Image 
             src="/1.png" 
@@ -117,7 +117,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center pt-16 pb-20">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center pt-8 sm:pt-16 pb-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
