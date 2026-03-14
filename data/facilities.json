@@ -1,0 +1,40 @@
+{
+  "facilities": [
+    {
+      "name": "Ruang Kelas",
+      "description": "Ruang kelas yang nyaman dan ber-AC dengan kapasitas 25-30 siswa per kelas",
+      "icon": "School",
+      "image": "/images/facilities/classroom.jpg"
+    },
+    {
+      "name": "Musholla",
+      "description": "Musholla yang luas dan bersih untuk kegiatan ibadah dan pembelajaran Al-Quran",
+      "icon": "Moon",
+      "image": "/images/facilities/musholla.jpg"
+    },
+    {
+      "name": "Perpustakaan",
+      "description": "Perpustakaan dengan koleksi buku akademik dan keagamaan yang lengkap",
+      "icon": "Library",
+      "image": "/images/facilities/library.jpg"
+    },
+    {
+      "name": "Lapangan Olahraga",
+      "description": "Lapangan untuk kegiatan olahraga dan upacara bendera",
+      "icon": "Trophy",
+      "image": "/images/facilities/field.jpg"
+    },
+    {
+      "name": "Kantin Sehat",
+      "description": "Kantin yang menyediakan makanan sehat dan halal",
+      "icon": "Utensils",
+      "image": "/images/facilities/canteen.jpg"
+    },
+    {
+      "name": "Laboratorium Komputer",
+      "description": "Lab komputer dengan perangkat modern untuk pembelajaran TIK",
+      "icon": "Monitor",
+      "image": "/images/facilities/computer-lab.jpg"
+    }
+  ]
+}

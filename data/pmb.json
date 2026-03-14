@@ -1,0 +1,65 @@
+{
+  "title": "Penerimaan Murid Baru",
+  "subtitle": "Tahun Ajaran 2025/2026",
+  "registration": {
+    "startDate": "1 Januari 2025",
+    "endDate": "30 April 2025",
+    "academicYear": "2025/2026"
+  },
+  "requirements": [
+    "Usia minimal 6 tahun pada bulan Juli tahun ajaran berjalan",
+    "Fotokopi Akta Kelahiran (2 lembar)",
+    "Fotokopi Kartu Keluarga (2 lembar)",
+    "Fotokopi KTP Orang Tua (2 lembar)",
+    "Pas Foto 3x4 (4 lembar)",
+    "Surat Keterangan Sehat dari Dokter",
+    "Surat Pindah (bagi siswa pindahan)"
+  ],
+  "stages": [
+    {
+      "step": 1,
+      "title": "Pendaftaran",
+      "description": "Mengisi formulir pendaftaran dan mengumpulkan berkas persyaratan"
+    },
+    {
+      "step": 2,
+      "title": "Verifikasi",
+      "description": "Tim panitia memverifikasi kelengkapan berkas pendaftaran"
+    },
+    {
+      "step": 3,
+      "title": "Tes Seleksi",
+      "description": "Mengikuti tes baca tulis Al-Quran dan wawancara"
+    },
+    {
+      "step": 4,
+      "title": "Pengumuman",
+      "description": "Pengumuman hasil seleksi dan pemberkasan ulang"
+    },
+    {
+      "step": 5,
+      "title": "Daftar Ulang",
+      "description": "Pembayaran dan pengisian data siswa baru"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Berapa biaya pendaftaran?",
+      "answer": "Biaya pendaftaran sebesar Rp 350.000 dapat dibayarkan saat mendaftar atau saat daftar ulang."
+    },
+    {
+      "question": "Apakah ada program beasiswa?",
+      "answer": "Ya, tersedia program beasiswa bagi siswa berprest dan keluarga kurang mampu."
+    },
+    {
+      "question": "Bagaimana sistem pembayaran?",
+      "answer": "Pembayaran dapat dilakukan secara tunai atau cicilan dengan ketentuan yang berlaku."
+    }
+  ],
+  "contact": {
+    "phone": "[Nomor Telepon]",
+    "whatsapp": "[Nomor WhatsApp]",
+    "email": "[Email PMB]",
+    "address": "[Alamat Sekolah]"
+  }
+}

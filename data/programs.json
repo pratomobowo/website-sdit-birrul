@@ -1,0 +1,90 @@
+{
+  "curriculum": {
+    "title": "Kurikulum",
+    "description": "Kurikulum terintegrasi yang menggabungkan kurikulum nasional dengan pendidikan Islam berbasis Al-Quran dan As-Sunnah",
+    "items": [
+      "Kurikulum Merdeka sesuai standar Kemendikbud",
+      "Pendidikan Agama Islam berbasis Al-Quran dan As-Sunnah",
+      "Bahasa Arab (Nahwu, Sharf, Qira'ah)",
+      "Tahfidz Al-Quran dengan Metode Ijazah"
+    ]
+  },
+  "featured": [
+    {
+      "title": "Program Tahfidz Al-Quran",
+      "description": "Program hafalan Al-Quran dengan metode yang telah terbukti efektif. Target minimal 5 juz dalam 6 tahun dengan pendampingan ustadz/ustadzah hafidz. Menggunakan metode ijazah untuk保证 kesempurnaan hafalan.",
+      "features": ["Metode Talaqqi", "Muraja'ah Harian", "Setoran Hafalan", "Sertifikasi Ijazah", "Tahsin Al-Quran"]
+    },
+    {
+      "title": "Program Pengamalan Sunnah",
+      "description": "Program pembiasaan amalan sunnah nabawi dalam kehidupan sehari-hari agar menjadi generasi yang meneladani Nabi Muhammad Shallallahhu 'Alaihi Wa Sallam.",
+      "features": ["Sunnah Sholat", "Sunnah Doa", "Sunnah Akhlaq", "Sunnah Mu'amalah", "Sunnah Ibadah"]
+    }
+  ],
+  "sunnahActivities": [
+    {
+      "name": "Sholat Dhuha Berjamaah",
+      "arabic": "صلاة الضحى جماعة",
+      "description": "Sholat Dhuha dilakukan secara berjamaah di Masjid sekolah setiap pagi sebelum belajar",
+      "reference": "HR. Bukhari: 'Sholat Dhuha minimal 2 rakaat dan maksimal 8 rakaat'"
+    },
+    {
+      "name": "Dzikir Pagi & Sore",
+      "arabic": "ذكر الصباح والمساء",
+      "description": "Pembiasaan dzikir pagi dan sore sesuai tuntunan Al-Quran dan As-Sunnah",
+      "reference": "QS. Al-A'raf: 205-206"
+    },
+    {
+      "name": "Tilawah Al-Quran",
+      "arabic": "تلاوة القرآن",
+      "description": "Membaca Al-Quran setiap hari dengan tartil (bacaan yang jelas dan perlahan)",
+      "reference": "HR. Tirmidzi: 'Barangsiapa membaca satu huruf dari Al-Quran, maka baginya satu kebaikan'"
+    },
+    {
+      "name": "Doa Sebelum & Sesudah Makan",
+      "arabic": "الدعاء قبل وبعد الأكل",
+      "description": "Membaca doa sebelum dan sesudah makan sesuai sunnah Nabi",
+      "reference": "HR. Bukhari: 'Jika salah seorang dari kalian makan, maka bacalah doa'"
+    },
+    {
+      "name": "Sholat Zhuhur & Ashar Berjamaah",
+      "arabic": "صلاة الظهر والعصر جماعة",
+      "description": "Sholat Zhuhur dan Ashar dilaksanakan berjamaah di Masjid",
+      "reference": "HR. Bukhari: 'Sholat berjamaah lebih utama 27 derajat dari sholat sendirian'"
+    },
+    {
+      "name": "Membaca Sholawat",
+      "arabic": "قراءة الصلاة على النبي",
+      "description": "Pembiasaan membaca sholawat kepada Nabi Muhammad Shallallahhu 'Alaihi Wa Sallam",
+      "reference": "HR. Tirmidzi: 'Barangsiapa yang banyak bershalawat kepadaku, maka Allah akan membalasnya'"
+    },
+    {
+      "name": "Wudhu' yang Sempurna",
+      "arabic": "الوضوء الكامل",
+      "description": "Belajar wudhu' yang sesuai sunnah Nabi dengan tata cara yang benar",
+      "reference": "HR. Bukhari: 'Wudhu' yang baik menghilangkan dosa-dosa'"
+    },
+    {
+      "name": "Sholat Witir & Qiyamul Lail",
+      "arabic": "صلاة الوتر قيام الليل",
+      "description": "Pembiasaan qiyamul lail dan salat witir terutama di bulan Ramadhan",
+      "reference": "HR. Bukhari: 'Qiyamul Lail lebih baik dari tidur'"
+    }
+  ],
+  "extracurricular": [
+    { "name": "Pramuka (Karakter)", "icon": "Compass", "description": "Membentuk kepemimpinan dan kemandirian" },
+    { "name": "Pencak Silat (Sihat)", "icon": "Swords", "description": "Seni bela diri sesuai tradisi Nusantara" },
+    { "name": "Tilawah & Qiro'ah", "icon": "BookOpen", "description": "Seni membaca Al-Quran dengan tartil" },
+    { "name": "Kaligrafi (Falah)", "icon": "Pen", "description": "Seni tulisan Arab" },
+    { "name": "Robotika (Teknologi)", "icon": "Cpu", "description": "Pembelajaran teknologi modern" },
+    { "name": "Futsal (Olahraga)", "icon": "CircleDot", "description": "Olahraga tim untuk kesehatan" },
+    { "name": "Seni Tari (Bidayah)", "icon": "Music", "description": "Tari tradisional Islami" },
+    { "name": "English Club", "icon": "MessageCircle", "description": "Bahasa Inggris untuk komunikasi global" }
+  ],
+  "schedule": {
+    "days": "Senin - Kamis & Sabtu",
+    "hours": "07:00 - 14:00 WIB",
+    "jumatan": "Jumat: 07:00 - 11:00 (Sholat Jum'at Berjamaah)",
+    "details": "Jam belajar efektif dengan integrasi shunt, dzikir, dan pembiasaan Islami"
+  }
+}

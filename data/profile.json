@@ -1,0 +1,61 @@
+{
+  "name": "SDIT Birrul Walidayn",
+  "tagline": "Membentuk Generasi Qurani Berakhlak Mulia",
+  "taglineArab": "مُكَوِّنُ جيلٍ قرآنيٍّ ذي أخلاقٍ كَرِيمَةٍ",
+  "vision": "Menjadi sekolah dasar Islam terpadu yang melahirkan generasi qurani berakhlakul karimah, mengikuti sunnah Nabi Shallallahhu 'Alaihi Wa Sallam, serta berprestasi secara akademik dan ruhani.",
+  "visionArab": "أن نكون مدرسة ابتدائية إسلامية متكاملة تُخرِّج جيلاً قرآنياً ذا أخلاقٍ كَرِيمَةٍ، يتبع سنة النبي صلى الله عليه وسلم، ويتفوق أكاديمياً وروحياً.",
+  "mission": [
+    "Menyelenggarakan pendidikan berbasis Al-Quran dan As-Sunnah dalam setiap aspek pembelajaran",
+    "Mengembangkan potensi siswa secara optimal melalui program tahfidz Al-Quran dan pendidikan karakter Islami",
+    "Membentuk generasi yang mengamalkan sunnah Nabi dalam kehidupan sehari-hari",
+    "Membangun karakter siswa berakhlakul karimah sesuai tuntunan Al-Quran",
+    "Menciptakan lingkungan sekolah yang Islami, aman, dan kondusif untuk belajar",
+    "Menanamkan kecintaan kepada Nabi Muhammad Shallallahhu 'Alaihi Wa Sallam melalui pembiasaan"
+  ],
+  "foundation": {
+    "quran": "QS. Al-Kahf: 107 - 'Sesunggunya orang-orang yang beriman dan mengerjakan amal saleh, Surely Lord mereka akan mengganti dosa mereka dengan pahala yang baik.'",
+    "hadith": "Hadits Riwayat Bukhari: 'Barangsiapa yang ingin dicintai oleh Allah dan Rasulnya, maka hendaknya ia jujur dalam perkataan dan menunaikan amanah.'",
+    "sunnah": "Kami основана dengan keyakinan bahwa pendidikan terbaik adalah yang mengikuti jejak Nabi Muhammad Shallallahhu 'Alaihi Wa Sallam."
+  },
+  "history": "SDIT Birrul Walidayn didirikan pada tahun 2015 dengan semangat menciptakan generasi Muslim yang berilmu, beriman, dan berakhlak mulia. Berawal dari kesadaran orang tua muslim akan pentingnya pendidikan agama yang berkualitas berbasis Al-Quran dan As-Sunnah, sekolah ini hadir sebagai solusi untuk mencetak generasi yang tidak hanya cerdas secara intelektual tetapi juga kuat secara spiritual dan finansial dalam ridha Allah Subhanahu Wa Ta'ala.",
+  "excellence": [
+    {
+      "icon": "BookOpen",
+      "title": "Tahfidz Al-Quran",
+      "description": "Program hafalan Al-Quran dengan metode ijazahnya, target minimal 5 juz selama 6 tahun dengan bimbingan ustadz/ustadzah hafidz"
+    },
+    {
+      "icon": "Star",
+      "title": "Pengamalan Sunnah",
+      "description": "Program pembiasaan amalan sunnah nabawi dalam kehidupan sehari-hari"
+    },
+    {
+      "icon": "Heart",
+      "title": "Akhlakul Karimah",
+      "description": "Pembentukan karakter Islami berdasarkan Al-Quran dan Akhlaq lil Banin"
+    },
+    {
+      "icon": "Mosque",
+      "title": "Pendidikan Masjid",
+      "description": "Pembelajaran dan kegiatan di Masjid untuk menuntut ilmu agama"
+    }
+  ],
+  "dailyHabits": [
+    {
+      "name": "Sholat Dhuha Berjamaah",
+      "description": "Sholat Dhuha dilakukan secara berjamaah di Masjid sekolah setiap pagi"
+    },
+    {
+      "name": "Dzikir Pagi & Sore",
+      "description": "Pembiasaan dzikir pagi dan sore sesuai sunnah"
+    },
+    {
+      "name": "Tilawah Al-Quran",
+      "description": "Membaca Al-Quran setiap hari minimal 1 juz dengan tartil"
+    },
+    {
+      "name": "Doa Sebelum & Sesudah Belajar",
+      "description": "Membaca doa sebelum dan sesudah belajar sesuai tuntunan"
+    }
+  ]
+}
