@@ -21,7 +21,7 @@ export default function Hero() {
              x: { duration: 1 },
              y: { duration: 4, repeat: Infinity, ease: "easeInOut" } 
            }}
-           className="absolute bottom-[38%] left-0 -translate-x-[60%] sm:bottom-0 sm:left-auto sm:translate-x-0 sm:-left-8 lg:-left-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10"
+           className="absolute bottom-[38%] left-0 -translate-x-[60%] sm:bottom-0 sm:left-auto sm:translate-x-0 sm:-left-8 lg:-left-16 w-[220px] sm:w-[300px] lg:w-[450px] z-0 opacity-70 sm:opacity-100"
         >
           <Image 
             src="/2.png" 
@@ -42,7 +42,7 @@ export default function Hero() {
              x: { duration: 1 },
              y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 } 
            }}
-           className="absolute bottom-[38%] right-0 translate-x-[60%] sm:bottom-0 sm:right-auto sm:translate-x-0 sm:-right-8 lg:-right-16 w-[220px] sm:w-[300px] lg:w-[450px] z-10"
+           className="absolute bottom-[38%] right-0 translate-x-[60%] sm:bottom-0 sm:right-auto sm:translate-x-0 sm:-right-8 lg:-right-16 w-[220px] sm:w-[300px] lg:w-[450px] z-0 opacity-70 sm:opacity-100"
         >
           <Image 
             src="/1.png" 
@@ -131,7 +131,7 @@ export default function Hero() {
             </span>
           </div>
           
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-emerald-950 leading-[1.1] sm:leading-tight px-2">
+          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-emerald-950 leading-[1.1] sm:leading-tight px-2 [text-shadow:_0_2px_10px_rgb(255_255_255_/_60%)]">
             SDIT <br className="sm:hidden" />
             <span className="text-emerald-600 relative inline-block">
               Birrul Walidayn
@@ -141,7 +141,7 @@ export default function Hero() {
             </span>
           </h1>
           
-          <p className="text-lg sm:text-2xl md:text-3xl text-emerald-800 font-medium max-w-4xl mx-auto leading-relaxed px-4">
+          <p className="text-lg sm:text-2xl md:text-3xl text-emerald-800 font-medium max-w-4xl mx-auto leading-relaxed px-4 [text-shadow:_0_1px_8px_rgb(255_255_255_/_80%)]">
             {profileData.tagline}
           </p>
           
@@ -149,7 +149,7 @@ export default function Hero() {
             Mendidik generasi Qurani yang ceria, kreatif, dan cerdas berbasis Akhlakul Karimah & As-Sunnah Nabawiyah.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 sm:pt-8 px-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 sm:pt-8 px-4 relative z-10">
             <Button href="/pmb" variant="primary" size="lg" className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-500/30 text-base rounded-full px-8 py-4 font-bold border-2 border-emerald-500 hover:border-emerald-600 transition-all hover:scale-105">
               Daftar Sekarang
             </Button>
@@ -157,6 +157,9 @@ export default function Hero() {
               Profil Sekolah
             </Button>
           </div>
+          
+          {/* Subtle radial glow to protect text legibility on mobile */}
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.6)_0%,transparent_80%)] lg:hidden pointer-events-none" />
         </motion.div>
       </div>
       
