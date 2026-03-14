@@ -41,10 +41,23 @@ export default function Navigation() {
     setIsOpen(false);
   }, [pathname]);
 
+  // Prevent scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 flex flex-col transition-transform duration-500 ease-in-out ${
-      scrolled ? "-translate-y-[35px]" : "translate-y-0"
-    }`}>
+    <>
+      <header className={`fixed top-0 left-0 right-0 z-50 flex flex-col transition-transform duration-500 ease-in-out ${
+        scrolled ? "-translate-y-[35px]" : "translate-y-0"
+      }`}>
       {/* Top Bar - Desktop Only */}
       <div className="hidden lg:flex bg-emerald-900 text-white border-b border-emerald-800/30 h-[35px] items-center">
         <div className="max-w-7xl mx-auto px-8 flex justify-between items-center text-xs font-medium w-full">
@@ -176,96 +189,105 @@ export default function Navigation() {
             </div>
           </div>
         </nav>
-
-        {/* Mobile Sidebar Navigation */}
-        <AnimatePresence>
-          {isOpen && (
-            <>
-              {/* Overlay */}
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setIsOpen(false)}
-                className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
-              />
-              
-              {/* Sidebar */}
-              <motion.div
-                initial={{ x: "100%" }}
-                animate={{ x: 0 }}
-                exit={{ x: "100%" }}
-                transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                className="fixed top-0 right-0 bottom-0 w-[80%] max-w-sm bg-white z-50 lg:hidden shadow-2xl flex flex-col"
-              >
-                <div className="p-6 flex justify-between items-center border-b">
-                  <span className="font-display font-bold text-emerald-900">Menu Navigasi</span>
-                  <button 
-                    onClick={() => setIsOpen(false)}
-                    className="p-2 text-gray-500 hover:bg-gray-100 rounded-lg"
-                  >
-                    <X size={20} />
-                  </button>
-                </div>
-                
-                <div className="flex-1 overflow-y-auto py-6 px-4">
-                  <div className="space-y-2">
-                    {navLinks.map((link) => (
-                      <div key={link.label}>
-                        {link.dropdown ? (
-                          <div className="space-y-1">
-                            <div className="px-4 py-2 text-xs font-bold text-gray-400 uppercase tracking-wider">
-                              {link.label}
-                            </div>
-                            {link.dropdown.map((drop) => (
-                              <Link
-                                key={drop.href}
-                                href={drop.href}
-                                className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${
-                                  pathname === drop.href 
-                                    ? "bg-emerald-50 text-emerald-700" 
-                                    : "text-gray-700 hover:bg-gray-50"
-                                }`}
-                              >
-                                {drop.label}
-                              </Link>
-                            ))}
-                          </div>
-                        ) : (
-                          <Link
-                            href={link.href}
-                            className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${
-                              pathname === link.href 
-                                ? "bg-emerald-50 text-emerald-700" 
-                                : "text-gray-700 hover:bg-gray-50"
-                            }`}
-                          >
-                            {link.label}
-                          </Link>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="p-6 border-t bg-gray-50">
-                  <Link
-                    href="/pmb"
-                    className="flex items-center justify-center w-full py-4 bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-200"
-                  >
-                    Daftar Sekarang
-                  </Link>
-                  <div className="mt-6 flex justify-center gap-6 text-gray-400">
-                    <Instagram size={20} />
-                    <Facebook size={20} />
-                    <Phone size={20} />
-                  </div>
-                </div>
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
       </div>
     </header>
+
+      {/* Mobile Sidebar Navigation - Moved OUTSIDE header to avoid transform issues */}
+      <AnimatePresence>
+        {isOpen && (
+          <div className="lg:hidden">
+            {/* Overlay */}
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100]"
+            />
+            
+            {/* Sidebar */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed top-0 right-0 bottom-0 w-[85%] max-w-xs bg-white z-[101] shadow-2xl flex flex-col overflow-hidden"
+            >
+              {/* Sidebar Header */}
+              <div className="p-6 flex justify-between items-center border-b border-gray-100">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center shadow-emerald-100 shadow-lg">
+                    <span className="text-white font-bold text-sm">B</span>
+                  </div>
+                  <span className="font-display font-black text-emerald-950 text-lg">Navigasi</span>
+                </div>
+                <button 
+                  onClick={() => setIsOpen(false)}
+                  className="p-2 text-emerald-950 bg-gray-50 hover:bg-gray-100 rounded-xl transition-colors"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+              
+              {/* Sidebar Content */}
+              <div className="flex-1 overflow-y-auto py-6 px-4">
+                <nav className="space-y-1">
+                  {navLinks.map((link) => (
+                    <div key={link.label} className="py-1">
+                      {link.dropdown ? (
+                        <div className="space-y-1">
+                          <div className="px-4 py-2 text-[10px] font-black text-emerald-600/50 uppercase tracking-[0.2em]">
+                            {link.label}
+                          </div>
+                          {link.dropdown.map((drop) => (
+                            <Link
+                              key={drop.href}
+                              href={drop.href}
+                              className={`block px-4 py-3.5 rounded-2xl text-base font-bold transition-all ${
+                                pathname === drop.href 
+                                  ? "bg-emerald-50 text-emerald-700 shadow-sm" 
+                                  : "text-emerald-900/70 hover:bg-emerald-50/50 hover:text-emerald-700"
+                              }`}
+                            >
+                              {drop.label}
+                            </Link>
+                          ))}
+                        </div>
+                      ) : (
+                        <Link
+                          href={link.href}
+                          className={`block px-4 py-3.5 rounded-2xl text-base font-bold transition-all ${
+                            pathname === link.href 
+                              ? "bg-emerald-50 text-emerald-700 shadow-sm" 
+                              : "text-emerald-900/70 hover:bg-emerald-50/50 hover:text-emerald-700"
+                          }`}
+                        >
+                          {link.label}
+                        </Link>
+                      )}
+                    </div>
+                  ))}
+                </nav>
+              </div>
+
+              {/* Sidebar Footer */}
+              <div className="p-6 border-t border-gray-100 space-y-6">
+                <Link
+                  href="/pmb"
+                  className="flex items-center justify-center w-full py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-2xl shadow-xl shadow-emerald-200 transition-all active:scale-[0.98]"
+                >
+                  Daftar Sekarang
+                </Link>
+                <div className="flex justify-center gap-8 text-emerald-900/40">
+                  <a href="#" className="hover:text-emerald-600 transition-colors"><Instagram size={22} /></a>
+                  <a href="#" className="hover:text-emerald-600 transition-colors"><Facebook size={22} /></a>
+                  <a href="tel:+628123456789" className="hover:text-emerald-600 transition-colors"><Phone size={22} /></a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
